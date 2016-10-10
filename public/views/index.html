@@ -1,44 +1,32 @@
-<!DOCTYPE html>
+<!DOCTYPE>
 <html>
   <head>
     <meta charset="utf-8">
-    <meta charset="utf-8">
-    <script src="vendor/jquery.min.js"></script>
-    <script src="scripts/client.js"></script>
-    <link href="styles/styles.css" rel="stylesheet" />
-    <title>Weekend Challenge #3</title>
+    <script src="vendor/jquery.min.js" charset="utf-8"> </script>
+    <script src="scripts/client.js" charset="utf-8"></script>
+
+    <title>Calculator</title>
   </head>
   <body>
-    <h1>Weekend Challenge #3</h1>
+      <form id="calculator">
+        <input type="number" name="x" value="" />
+        <input type="number" name="y" value="" />
 
-    <div class="info">
-      <button id='clear'>Clear</button>
-      <div class='screen'>Your Math Here:<span></span></div>
-      <div class="row1">
-        <button data-value="7" class="key">7</button>
-        <button data-value="8" class="key">8</button>
-        <button data-value="9" class="key">9</button>
-        <button id='divideNum'>/</button>
-      </div>
-      <div class="row2">
-        <button data-value="4" class="key">4</button>
-        <button data-value="5" class="key">5</button>
-        <button data-value="6" class="key">6</button>
-        <button id='multiplyNum'>*</button>
-      </div>
-      <div class="row3">
-        <button data-value="1" class="key">1</button>
-        <button data-value="2" class="key">2</button>
-        <button data-value="3" class="key">3</button>
-        <button id='subtractNum'>-</button>
-      </div>
-      <div class="row4">
-        <button id='decimal'>.</button>
-        <button data-value="0" class="key">0</button>
-        <button id='equalButton' type='submit'>=</button>
-        <button id='addNum'>+</button>
-      </div>
-    </div>
+        <label for "subtract">Subtract</label>
+        <input type="radio" name="operation" value="subtract" id="subtract" />
 
+        <label for "add">add</label>
+        <input type="radio" name="operation" value="add" id="add" />
+
+        <label for "divide">divide</label>
+        <input type="radio" name="operation" value="divide" id="divide" />
+
+        <label for "multiply">multiply</label>
+        <input type="radio" name="operation" value="multiply" id="multiply" />
+
+        <input type="submit" value="Calculate!" />
+      </form>
+      <button type="button" id="clear">Clear</button>
+      <h1>Answer: <span id="display"></span> </h1>
   </body>
 </html>
